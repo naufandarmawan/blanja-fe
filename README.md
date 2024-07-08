@@ -15,8 +15,7 @@
 - [Instalation](#instalation)
 - [Create Environment Variable](#create-environment-variable)
 - [Screenshots](#screenshots)
-- [Release Demo](#demo)
-- [Related Project](#related-project-backend)
+- [Release Project](#related-project)
 - [Developed](#Developed-by-the-FWM19-Team)
 
 
@@ -252,22 +251,18 @@ setup server:
 </div> -->
 
 
-## Release Demo
-- [`Demo`](https://blanja-fe-xi.vercel.app/)
-
-
-## Related Project (Backend)
-
-- [`Backend Blanja`](https://github.com/anditorp/blanja-be.git)
+## Release Project
+- [`Blanja Demo`](https://blanja-fe-xi.vercel.app/)
+- [`Blanja Backend`](https://github.com/naufandarmawan/blanja-be.git)
 
 
 
 ## Developed by the FWM19 Team :
 
-💻 [@anditorp](https://github.com/anditorp) as back end
+💻 [@anditorp](https://github.com/anditorp) as Backend Developer
 
-💻 [@SwitchZer](https://github.com/SwitchZer) as back end
+💻 [@SwitchZer](https://github.com/SwitchZer) as Backend Developer
 
-💻 [@crossxjonathan](https://github.com/crossxjonathan) as front end
+💻 [@crossxjonathan](https://github.com/crossxjonathan) as Frontend Developer
 
-💻 [@naufandarmawan](https://github.com/naufandarmawan) as front end
+💻 [@naufandarmawan](https://github.com/naufandarmawan) as Frontend Developer
