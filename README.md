@@ -97,7 +97,138 @@ setup server:
 
 ## Screenshots
 
-<div align="center">
+<table style="width: 100%; border-collapse: collapse;">
+  <colgroup>
+    <col style="width: 25%;">
+    <col style="width: 25%;">
+    <col style="width: 25%;">
+    <col style="width: 25%;">
+  </colgroup>
+  <tr>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Landing Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Product Details Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Category Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Search Page</th>
+  </tr>
+  <tr>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-13.png" alt="Screenshot 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-1.png" alt="Screenshot 2" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-2.png" alt="Screenshot 3" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-12.png" alt="Screenshot 4" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">My Bag Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Checkout Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Customer Profile Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Customer Shipping Address</th>
+  </tr>
+ <tr>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-3.png" alt="Screenshot 5" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-4.png" alt="Screenshot 6" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-11.png" alt="Screenshot 7" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-5.png" alt="Screenshot 8" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Customer Order Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Store Profile Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Store Product Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Sell Product Page</th>
+  </tr>
+  <tr>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-6.png" alt="Screenshot 9" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-7.png" alt="Screenshot 10" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-10.png" alt="Screenshot 11" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-8.png" alt="Screenshot 12" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Store Order Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Customer Login Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Store Login Page</th>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Customer Register Page</th>
+  </tr>
+  <tr>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-9.png" alt="Screenshot 13" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-17.png" alt="Screenshot 14" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-14.png" alt="Screenshot 15" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-15.png" alt="Screenshot 16" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Store Order Page</th>
+  </tr>
+  <tr>
+    <td style="padding: 8px; text-align: left; border: 1px solid #ddd;">
+      <div style="width: 100%; height: 300px; overflow: hidden;">
+        <img src="./public/screenshots/screenshot-16.png" alt="Screenshot 17" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </td>
+  </tr>
+  <!-- Repeat similar rows for more screenshots -->
+</table>
+<!-- <div align="center">
     <p>Login Page</p>   
     <img width="250" src="./public/screenshots/Login.png">   
     <p>Home Page</p>   
@@ -118,7 +249,7 @@ setup server:
 <div align="center">
     <p>Cart</p>    
     <img width="250" src="./public/screenshots/Cart.png">   
-</div>
+</div> -->
 
 
 ## Release Demo
