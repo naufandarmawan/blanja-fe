@@ -127,7 +127,7 @@ const loginSeller = () => {
         </div>
         {/* <ToastContainer position='bottom-right' /> */}
         <div className='flex justify-center'>
-        <p>Don&#39;t have a Tokopedia account?{' '} 
+        <p>Don&#39;t have a Blanja account?{' '} 
         <span onClick={handleRegister} className='text-red-maroon hover:font-semibold hover:text-orange-500 cursor-pointer'>
             Register
         </span>

@@ -38,7 +38,7 @@ const Register = () => {
                             <RegisterSeller />
                         </div>
                     </div>
-                    <p className="w-full text-center font-normal text-base text-[#1F2A36] max-lg:text-sm">Already have a Tokopedia account? <Link className="text-[#DB3022]" to="/auth/login">Login</Link></p>
+                    <p className="w-full text-center font-normal text-base text-[#1F2A36] max-lg:text-sm">Already have a Blanja account? <Link className="text-[#DB3022]" to="/auth/login">Login</Link></p>
                 </div>
             </div>
         </div>

@@ -56,12 +56,14 @@ const Product = () => {
 
     const handleAddBag = () => {
         const token = localStorage.getItem('token');
+        console.log(token);
         const orderDetails = {
             products_id: products.products_id,
             color: selectedColor,
             quantity: quantity.toString(),
             size: size.toString(),
         };
+        console.log(orderDetails);
 
         console.log('Order Details:', orderDetails);
 
@@ -116,89 +118,89 @@ const Product = () => {
                 <a href="/category">Category</a> &gt;
                 <span>T-Shirt</span>
             </nav>
-            <div>
-                <div className='flex w-96 h-96 py-10 gap-10'>
-                    {images.map((image, index) => (
-                        <img
-                            key={index}
-                            src={products.image || imageDefault}
-                            alt={`thumbnail ${index + 1}`}
-                            className='thumbnail'
-                            onClick={() => setMainImage(image)}
-                        />
-                    ))}
+
+            <div className='flex w-96 py-10 gap-10'>
+                {images.map((image, index) => (
+                    <img
+                        key={index}
+                        src={products.image || imageDefault}
+                        alt={`thumbnail ${index + 1}`}
+                        className='thumbnail'
+                        onClick={() => setMainImage(image)}
+                    />
+                ))}
+                <div>
+                    <h1 className='text-4xl font-semibold'>{products.name}</h1>
+                    <p className='text-lg font-medium text-gray-400 py-5'>{products.category}</p>
+                    <div className='relative bottom-5 text-gray-400'>
+                        {[...Array(5)].map((_, index) => (
+                            <span key={index} className='star filled'>&#9733;</span>
+                        ))}
+                        (10)
+                    </div>
                     <div>
-                        <h1 className='text-4xl font-semibold'>{products.name}</h1>
-                        <p className='text-lg font-medium text-gray-400 py-5'>{products.category}</p>
-                        <div className='relative bottom-5 text-gray-400'>
-                            {[...Array(5)].map((_, index) => (
-                                <span key={index} className='star filled'>&#9733;</span>
+                        <p className='text-lg font-medium text-gray-400'>Price</p>
+                        <h1 className='text-4xl font-bold'>$ {products.price}</h1>
+                    </div>
+                    <div className='py-5'>
+                        <p className='text-gray-700 font-medium'>Color</p>
+                        <div className='color-options'>
+                            {colors.map((color) => (
+                                <label key={color.value} className='color-label'>
+                                    <input
+                                        type='radio'
+                                        name='color'
+                                        value={color.value}
+                                        checked={selectedColor === color.value}
+                                        onChange={() => setSelectedColor(color.value)}
+                                    />
+                                    <span className='color-circle' style={{ backgroundColor: color.value }}></span>
+                                </label>
                             ))}
-                            (10)
                         </div>
-                        <div>
-                            <p className='text-lg font-medium text-gray-400'>Price</p>
-                            <h1 className='text-4xl font-bold'>$ {products.price}</h1>
-                        </div>
-                        <div className='py-5'>
-                            <p className='text-gray-700 font-medium'>Color</p>
-                            <div className='color-options'>
-                                {colors.map((color) => (
-                                    <label key={color.value} className='color-label'>
-                                        <input
-                                            type='radio'
-                                            name='color'
-                                            value={color.value}
-                                            checked={selectedColor === color.value}
-                                            onChange={() => setSelectedColor(color.value)}
-                                        />
-                                        <span className='color-circle' style={{ backgroundColor: color.value }}></span>
-                                    </label>
-                                ))}
-                            </div>
-                            <div className='addproduct flex flex-row gap-10 py-5 font-medium'>
-                                <div>
-                                    <label className='right-4 z-0'>Size</label>
-                                    <div className='control py-3'>
-                                        <button onClick={() => handleSizeChange(-1)}>-</button>
-                                        <span>{size}</span>
-                                        <button onClick={() => handleSizeChange(+1)}>+</button>
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className='right-4 z-0'>Quantity</label>
-                                    <div className='control py-3'>
-                                        <button onClick={() => handleQuantityChange(-1)}>-</button>
-                                        <span>{quantity}</span>
-                                        <button onClick={() => handleQuantityChange(+1)}>+</button>
-                                    </div>
+                        <div className='addproduct flex flex-row gap-10 py-5 font-medium'>
+                            <div>
+                                <label className='right-4 z-0'>Size</label>
+                                <div className='control py-3'>
+                                    <button onClick={() => handleSizeChange(-1)}>-</button>
+                                    <span>{size}</span>
+                                    <button onClick={() => handleSizeChange(+1)}>+</button>
                                 </div>
                             </div>
-                            <div className='flex flex-1 flex-row gap-5 text-nowrap font-semibold py-2'>
-                                <p>Size Available: {products.size}</p>
-                                <p>Stock Available: {products.stock}</p>
-                                <p>Color Available: {products.color}</p>
+                            <div>
+                                <label className='right-4 z-0'>Quantity</label>
+                                <div className='control py-3'>
+                                    <button onClick={() => handleQuantityChange(-1)}>-</button>
+                                    <span>{quantity}</span>
+                                    <button onClick={() => handleQuantityChange(+1)}>+</button>
+                                </div>
                             </div>
-                            <div className='flex flex-row gap-5 text-center z-30'>
-                                <ButtonWhite
-                                    className="bg-white w-36 text-gray-700 hover:text-white"
-                                    name="Chat"
-                                />
-                                <ButtonWhite
-                                    className="bg-white w-36 text-gray-700 hover:text-white"
-                                    name="Add bag"
-                                    onClick={handleAddBag}
-                                />
-                                <Button
-                                    name="Buy Now"
-                                    onClick={handleBuyNow}
-                                />
-                            </div>
+                        </div>
+                        <div className='flex flex-1 flex-row gap-5 text-nowrap font-semibold py-2'>
+                            <p>Size Available: {products.size}</p>
+                            <p>Stock Available: {products.stock}</p>
+                            <p>Color Available: {products.color}</p>
+                        </div>
+                        <div className='flex flex-row gap-5 text-center z-30'>
+                            <ButtonWhite
+                                className="bg-white w-36 text-gray-700 hover:text-white"
+                                name="Chat"
+                            />
+                            <ButtonWhite
+                                className="bg-white w-36 text-gray-700 hover:text-white"
+                                name="Add bag"
+                                onClick={handleAddBag}
+                            />
+                            <Button
+                                name="Buy Now"
+                                onClick={handleBuyNow}
+                            />
                         </div>
                     </div>
-                    <ToastContainer position='bottom-right' />
                 </div>
+                <ToastContainer position='bottom-right' />
             </div>
+
             <div className='flex flex-col py-28 gap-10'>
                 <div>
                     <ProductInfo products={products} />

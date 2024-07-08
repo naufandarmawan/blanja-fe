@@ -61,7 +61,7 @@ const RegisterSeller = () => {
           onChange={handleChange}
           name="name"
           label=""
-          placeholder="Masukkan nama"
+          placeholder="Enter name"
         />
         <Input
           type='email'
@@ -69,7 +69,7 @@ const RegisterSeller = () => {
           onChange={handleChange}
           name="email"
           label=""
-          placeholder="Masukkan email"
+          placeholder="Enter email"
         />
         <Input
           type='tel'
@@ -77,7 +77,7 @@ const RegisterSeller = () => {
           onChange={handleChange}
           name="phone"
           label=""
-          placeholder="Masukkan telepon"
+          placeholder="Enter phone number"
         />
         <Input
           type='text'
@@ -85,7 +85,7 @@ const RegisterSeller = () => {
           onChange={handleChange}
           name="store_name"
           label=""
-          placeholder="Masukkan nama toko"
+          placeholder="Enter store name"
         />
         <Input
           type='password'
@@ -93,7 +93,7 @@ const RegisterSeller = () => {
           onChange={handleChange}
           name="password"
           label=""
-          placeholder="Masukkan password"
+          placeholder="Enter password"
         />
       </div>
       <Button className='w-full' onClick={handleRegister} text='Sign up' />

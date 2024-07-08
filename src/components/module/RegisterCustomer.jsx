@@ -58,7 +58,7 @@ const RegisterCustomer = () => {
           onChange={handleChange}
           name="name"
           label=""
-          placeholder="Masukkan nama"
+          placeholder="Enter name"
         />
         <Input
           type='email'
@@ -66,7 +66,7 @@ const RegisterCustomer = () => {
           onChange={handleChange}
           name="email"
           label=""
-          placeholder="Masukkan email"
+          placeholder="Enter email"
         />
         <Input
           type='password'
@@ -74,7 +74,7 @@ const RegisterCustomer = () => {
           onChange={handleChange}
           name="password"
           label=""
-          placeholder="Masukkan password"
+          placeholder="Enter password"
         />
       </div>
       <Button className='w-full' onClick={handleRegister} text='Sign up' />

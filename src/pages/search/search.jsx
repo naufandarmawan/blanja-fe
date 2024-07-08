@@ -36,7 +36,7 @@ const SearchPage = () => {
 
         if (sortBy === 'asc') {
           result.sort((a, b) => (a.name > b.name) ? 1 : -1);
-        }else {
+        } else {
           result.sort((a, b) => (a.name < b.name) ? 1 : -1);
         }
         const { limit, page, totalData, totalPage } = res.data.pagination;
@@ -79,18 +79,19 @@ const SearchPage = () => {
       <h1 className='text-4xl font-semibold'>Find Product</h1>
       <p className='text-md text-gray-400 py-2'>Let’s Find Something New!</p>
       <div className='flex py-10 z-20 justify-center'>
-      <button className='bg-red-maroon text-white font-semibold px-4 py-2 rounded mr-2 hover:bg-orange-500' onClick={handleSortAsc}>
+        <button className='bg-red-maroon text-white font-semibold px-4 py-2 rounded mr-2 hover:bg-orange-500' onClick={handleSortAsc}>
           ASC
         </button>
         <button className='bg-red-maroon text-white font-semibold px-4 py-2 rounded hover:bg-orange-500' onClick={handleSortDesc}>
           DESC
         </button>
       </div>
-      <div className='grid-container'>
-        {products.length > 0 ? (
-          products.map((item) => (
-            <div className='grid-item' key={item.products_id}>
+      <div className='flex justify-center'>
+        <div className='grid grid-cols-5 gap-4'>
+          {products.length > 0 ? (
+            products.map((item) => (
               <Card
+                key={item.products_id}
                 image={item.image || imageDefault}
                 name={item.name}
                 price={item.price}
@@ -98,11 +99,11 @@ const SearchPage = () => {
                 rating={4.5}
                 onClick={() => navigate(`/products/${item.products_id}`)}
               />
-            </div>
-          ))
-        ) : (
-          <p>No products found</p>
-        )}
+            ))
+          ) : (
+            <p>No products found</p>
+          )}
+        </div>
       </div>
       <div className='flex justify-center gap-4 py-10'>
         <button

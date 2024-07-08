@@ -14,9 +14,8 @@ const CartCard = ({ photo = ProductThumbnail, name = "Product Name", store = "St
                 {/* <input type="checkbox" name="" id="" /> */}
                 <img className='size-16 rounded-md object-cover' src={photo} alt="" />
                 <div className='flex flex-col gap-1 justify-center'>
-                    <div className='flex gap-2'>
+                    <div className='flex flex-col gap-1'>
                         <p className='font-medium text-base'>{name}</p>
-                        <p className='font-medium text-base'>-</p>
                         <p className='font-medium text-base'>( {color} / {size} )</p>
                     </div>
 

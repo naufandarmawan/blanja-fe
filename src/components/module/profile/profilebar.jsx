@@ -26,7 +26,7 @@ const Profilebar = ({ name, image }) => {
     }
 
     return (
-        <div className='flex flex-row bg-white shadow-md w-96 h-208 py-36 px-28 gap-5 z-0'>
+        <div className='flex flex-row bg-white shadow-md w-96 h-208 py-36 px-16 gap-5 z-0'>
             <img src={image} alt={`${name}'s profile`} className='w-20 h-20 rounded-full object-cover' /> 
             <div className='flex flex-col py-3'>
             <h1 className='text-lg font-semibold text-nowrap'>{name}</h1>
