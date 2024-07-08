@@ -45,25 +45,25 @@ const Popular = () => {
     const imageDefault = '/notfound.png';
 
     return (
-        <div>
+        <div className='w-full'>
             <h1 className='text-4xl font-semibold'>Popular</h1>
             <p className='text-md text-gray-400 py-2'>Find clothes that are trending recently</p>
-            <div className='grid-container'>
+            <div className='w-full flex justify-between'>
                 {products && products.map((item) => (
-                    <div className='grid-item' key={item.products_id}>
-                        <Card
-                            image={item.image || imageDefault}
-                            name={item.name}
-                            price={item.price}
-                            category={item.category}
-                            rating={4.5}
-                            onClick={() => navigate(`/products/${item.products_id}`)}
-                        />
-                    </div>
+                    <Card
+                        key={item.products_id}
+                        image={item.image || imageDefault}
+                        name={item.name}
+                        price={item.price}
+                        category={item.category}
+                        rating={4.5}
+                        onClick={() => navigate(`/products/${item.products_id}`)}
+                    />
                 ))}
-                <div onClick={seeMore} className='relative top-5 cursor-pointer text-gray-500 hover:text-red-maroon text-2xl z-10'>
-                    <p><strong>See More...</strong></p>
-                </div>
+
+            </div>
+            <div onClick={seeMore} className='relative top-5  cursor-pointer text-gray-500 hover:text-red-maroon text-2xl z-10'>
+                <p className='text-center'><strong>See More...</strong></p>
             </div>
         </div>
     );

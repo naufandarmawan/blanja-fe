@@ -107,7 +107,7 @@ const columns = [
     cell: ({ row }) => {
       const historyId = row.getValue("history_id");
       const shortenedHistoryId = `${historyId.slice(0, 3)}*****${historyId.slice(-3)}`;
-      return <div className="lowercase">{shortenedHistoryId}</div>;
+      return <div>{shortenedHistoryId}</div>;
     },
   },
   {
@@ -142,7 +142,7 @@ const columns = [
         </Button>
       )
     },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("product_name")}</div>,
+    cell: ({ row }) => <div>{row.getValue("product_name")}</div>,
   },
   {
     accessorKey: "product_price",
@@ -161,7 +161,7 @@ const columns = [
       const productPrice = row.getValue("product_price");
       const quantity = row.getValue("quantity");
       const totalPrice = productPrice * quantity;
-      return <div className="lowercase">$ {totalPrice}</div>;
+      return <div>$ {totalPrice}</div>;
     },
   },
   {
@@ -177,7 +177,7 @@ const columns = [
         </Button>
       )
     },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("quantity")}</div>,
+    cell: ({ row }) => <div>{row.getValue("quantity")}</div>,
   },
   // {
   //   accessorKey: "price",
@@ -246,7 +246,7 @@ export function MyOrderTable() {
     api.get(`/order/store-order-history`)
       .then((res) => {
         console.log(res);
-      
+
         // alert("Get Orders Successful")
         toast.success("Get Orders Successful")
         const result = res.data

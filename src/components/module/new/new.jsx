@@ -40,21 +40,20 @@ const New = () => {
   const imageDefault = '/notfound.png';
 
   return (
-    <div>
+    <div className='w-full'>
       <h1 className='text-4xl font-semibold'>New</h1>
       <p className='text-md text-gray-400 py-2'>You’ve never seen it before!</p>
-      <div className='grid-container'>
+      <div className='w-full flex justify-between'>
         {products && products.map((item) => (
-          <div className='grid-item' key={item.products_id}>
             <Card
-              image={item.image || imageDefault }
+              key={item.products_id}
+              image={item.image || imageDefault}
               name={item.name}
               price={item.price}
               category={item.category}
               rating={4.5}
               onClick={() => navigate(`/products/${item.products_id}`)}
             />
-          </div>
         ))}
       </div>
     </div>

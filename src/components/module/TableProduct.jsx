@@ -104,7 +104,7 @@ const columns = [
         </Button>
       )
     },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("name")}</div>,
+    cell: ({ row }) => <div>{row.getValue("name")}</div>,
   },
   {
     accessorKey: "price",
@@ -119,7 +119,7 @@ const columns = [
         </Button>
       )
     },
-    cell: ({ row }) => <div className="lowercase">$ {row.getValue("price")}</div>,
+    cell: ({ row }) => <div>$ {row.getValue("price")}</div>,
   },
   {
     accessorKey: "stock",
@@ -134,7 +134,7 @@ const columns = [
         </Button>
       )
     },
-    cell: ({ row }) => <div className="lowercase">{row.getValue("stock")}</div>,
+    cell: ({ row }) => <div>{row.getValue("stock")}</div>,
   },
   // {
   //   accessorKey: "price",
