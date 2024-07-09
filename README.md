@@ -253,7 +253,7 @@ setup server:
 
 ## Release Project
 - [`Blanja Demo`](https://blanja-fe-xi.vercel.app/)
-- [`Blanja Backend`](https://github.com/naufandarmawan/blanja-be.git)
+- [`Blanja Backend`](https://github.com/naufandarmawan/blanja-be)
 
 
 
