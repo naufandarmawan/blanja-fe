@@ -20,7 +20,7 @@
 
 
 
-## introduction
+## Introduction
 
 Welcome to Blanja, your premier destination for all things e-commerce. Blanja offers a seamless and secure online shopping experience, providing a wide range of products to cater to every need and preference.
 
