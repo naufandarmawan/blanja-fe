@@ -12,9 +12,9 @@ const Home = () => {
       <div className='flex py-10 px-16'>
         <Category/>
       </div>
-      <div className='flex px-16'>
+      {/* <div className='flex px-16'>
         <New/>
-      </div>
+      </div> */}
       <div className='flex py-5 px-16'>
         <Popular/>
       </div>

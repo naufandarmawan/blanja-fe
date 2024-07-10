@@ -201,7 +201,7 @@ const SellingProduct = () => {
                     <div className='flex gap-4 items-center w-full'>
                         <div className='flex flex-col gap-2 items-center'>
                             <img className=' size-48 object-cover rounded-lg' src={form.image || BigProductThumbnail} alt="" />
-                            <p className='font-medium text-sm text-[#9b9b9b]'>Foto utama</p>
+                            <p className='font-medium text-sm text-[#9b9b9b]'>Main photo</p>
                         </div>
                         {/* <img className=' size-32 object-cover ' src={SmallProductThumbnail} alt="" />
                         <img className=' size-32 object-cover ' src={SmallProductThumbnail} alt="" />
