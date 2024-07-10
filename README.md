@@ -68,7 +68,7 @@ Welcome to Blanja, your premier destination for all things e-commerce. Blanja of
 #### Clone this repository
 
 ```bash
-   git clone https://github.com/anditorp/blanja-fe.git
+   git clone https://github.com/naufandarmawan/blanja-fe.git
 ```
 
 #### Install Depedencies
@@ -266,3 +266,9 @@ setup server:
 💻 [@crossxjonathan](https://github.com/crossxjonathan) as Frontend Developer
 
 💻 [@naufandarmawan](https://github.com/naufandarmawan) as Frontend Developer
+
+## License
+
+Distributed under the MIT License. See <a href="https://github.com/naufandarmawan/blanja-fe/blob/main/LICENSE">`LICENSE`</a> for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
